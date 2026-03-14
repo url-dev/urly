@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Startup Project</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f8;
+    color:#151b5d;
+}
+
+/* Header */
+header{
+    background:#0f3153;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Container */
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:20px;
+}
+
+/* Cards */
+.card{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+/* Images */
+.card img{
+    width:100%;
+    border-radius:5px;
+}
+
+/* Links */
+.card a{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 15px;
+    background:#3498db;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.card a:hover{
+    background:#2980b9;
+}
+
+/* Video */
+video{
+    width:100%;
+    border-radius:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Startup Project Presentation</h1>
+</header>
+
+<section class="container">
+
+    <div class="card">
+        <h2>Business Model Canvas</h2>
+        <img src="BUSINESS MODEL CANVAS.png" alt="Business Model Canvas">
+    </div>
+
+    <div class="card">
+        <h2>Empathy Map Canvas</h2>
+        <img src="EMPATHY MAP CANVAS.png" alt="Empathy Map Canvas">
+    </div>
+
+    <div class="card">
+        <h2>Lean Canvas</h2>
+        <img src="LEAN CANVAS.png" alt="Lean Canvas">
+    </div>
+
+    <div class="card">
+        <h2>Logo</h2>
+        <img src="gurologo.png" alt="Logo">
+    </div>
+
+    <div class="card">
+        <h2>Presentation</h2>
+        <a href="GuroGo.pptx" target="_blank">Open PPT</a>
+    </div>
+
+    <div class="card">
+        <h2>Prototype (Figma)</h2>
+        <video controls>
+            <source src="figma.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="card">
+        <h2>Video Pitch</h2>
+        <video controls>
+            <source src="gurogo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</section>
+
+</body>
+</html>

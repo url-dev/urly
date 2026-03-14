@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>My Projects</title>
+</head>
+<body>
+    <div class="loader">
+    <div class="spinner"></div>
+</div>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="eww.png" alt="Earl Logo">
+        </div>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Myprojects.html" class="active">My Projects</a>
+            <a href="Aboutme.html">About Me</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+    </header>
+
+    <section class="myproj">
+        <!-- Buttons container -->
+        <div class="proj-btn">
+            <a href="Angana_FILMSHOTS.mp4" target="projectFrame" onclick="showDesc('desc1')"><button>Project 1</button></a>
+            <a href="Catalog.pdf" target="projectFrame" onclick="showDesc('desc2')"><button>Project 2</button></a>
+            <a href="project3.html" target="projectFrame" onclick="showDesc('desc3')"><button>Project 3</button></a>
+            <a href="startup.html" target="projectFrame" onclick="showDesc('desc4')"><button>Project 4</button></a>
+            <a href="types-photo.html" target="projectFrame" onclick="showDesc('desc5')"><button>Project 5</button></a>
+        </div>
+
+        <!-- Iframe container -->
+        <div class="projects-iframe">
+            <iframe name="projectFrame" src="welcome.html"></iframe>
+            
+            
+            <!-- Project descriptions -->
+           <div id="desc1" class="proj-desc" style="display:none;">
+    <h1>Types of Shots</h1>
+    <p><b>Date:</b> July 13, 2025</p>
+    <p><b>Subject:</b> Multimedia Systems </p>
+    <p><b>Description:</b><br> This project showcases various cinematic shots including close ups, wide shots, and tracking shots. Each shot highlights proper composition, perspective, camera movement, and storytelling techniques to create strong visual impact and emotional depth. The project demonstrates creativity, technical skills in video editing, and an understanding of basic filmmaking principles. It was created using Filmora Editor under the guidance of Adviser Gene Boy Pitos.</p>
+</div>
+
+<div id="desc2" class="proj-desc" style="display:none;">
+    <h1>Product Catalog</h1>
+    <p><b>Date:</b> July 13, 2025</p>
+    <p><b>Subject:</b> Multimedia Systems</p>
+    <p><b>Description:</b> <br>The EARLY Chairs Catalog showcases a premium collection of gaming and ergonomic chairs designed for comfort, performance, and durability. It features a variety of well-known chair brands with high-quality designs for gamers and professionals. Each chair includes ergonomic features such as adjustable armrests, lumbar support, and reclining mechanisms. These features help provide better support and long-lasting comfort. The catalog was created using Adobe Photoshop under the guidance of Adviser Gene Boy Pitos</p>
+</div>
+
+<div id="desc3" class="proj-desc" style="display:none;">
+    <h1>Product Brochure</h1>
+    <p><b>Date:</b> December 13, 2024</p>
+    <p><b>Subject:</b> Living In IT Era</p>
+    <p><b>Description:</b> <br>This brochure presents EarlyWear’s modern and minimalist fashion collection with stylish and comfortable clothing for everyday wear. It features high-quality images, product descriptions, available sizes, and prices. The brochure also includes a special discount offer for customers. It reflects EarlyWear’s mission to combine elegance, practicality, and sustainability in every design. It was designed in Adobe Photoshop under the guidance of Adviser Charen Reposposa.</p>
+</div>
+
+<div id="desc4" class="proj-desc" style="display:none;">
+    <h1>Gurogo Startup</h1>
+    <p><b>Date:</b> Decemebr 7, 2025</p>
+    <p><b>Subject:</b> The Entrepreneurial Mind </p>
+    <p><b>Description:</b> <br>GuroGo is an educational platform designed to make learning simple and smart for students. It helps learners understand lessons through easy explanations and interactive materials. The platform provides organized learning resources for both students and teachers. With GuroGo, studying becomes more engaging and accessible anytime. This project was created under the guidance of Mateo Navarro.</p>
+</div>
+
+<div id="desc5" class="proj-desc" style="display:none;">
+    <h1>Photography</h1>
+    <p><b>Date:</b> July 13, 2025</p>
+    <p><b>Subject:</b> Multimedia Systems</p>
+    <p><b>Description:</b> <br>This project shows different types of photography that capture the beauty of nature and surroundings. It includes photos of landscapes, seas, and other natural views. The images highlight how photography can show the details and beauty of the environment. The photos were edited and enhanced using Adobe Photoshop to improve their quality. This project was created under the guidance of Gene Boy Pitos.</p>
+</div>
+        </div>
+    </section>
+
+    <!-- Minimal inline script to handle description showing -->
+   
+</body>
+</html>

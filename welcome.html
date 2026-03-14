@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Full iframe content styling */
+
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative;      /* for pseudo-element */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;        /* prevent scroll from blurred pseudo */
+}
+
+/* Background image with blur */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("eyy.png") no-repeat center center;
+    background-size: cover;
+    filter: blur(1.5px);       /* adjust blur amount */
+    transform: scale(1.05);  /* optional: prevent edges from showing blank */
+    z-index: 0;
+}
+
+/* Overlay to darken a bit for readability */
+body::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+/* Content above blurred background */
+body > * {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1s ease forwards;
+}
+
+h1 {
+    font-size: 3.3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.853);
+    
+}
+
+p {
+    font-size: 1.8rem;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ffffff; /* base text color */
+    text-shadow: 
+        0 0 5px #034ba4,   /* small outer glow */
+        0 0 10px #034ba4,  /* medium glow */
+        0 0 20px #000000;  /* larger glow */
+}
+
+.welcome-btn {
+    background: #fff;
+    color: #2c6ea4;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.welcome-btn:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+    </style>
+</head>
+
+
+<body>
+    <h1>Welcome to My Projects!</h1>
+    <p>Hi there! I’m Earl. You can explore my projects and see my skills and what I’m learning in web development, Java, hackathons, and more. To learn more about my work, you can see it by clicking one of my projects.</p>
+</body>
+</html>

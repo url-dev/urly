@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Your custom JS -->
+    <script src="script.js" defer></script>
+</head>
+<body class="contact-page">
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="eww.png" alt="Earl Logo">
+        </div>
+
+        <nav>
+            <a href="Home.html"> Home </a>
+            <a href="Myprojects.html"> My Projects </a>
+            <a href="Aboutme.html"> About Me </a>
+            <a href="contact.html" class="active"> Contacts </a>
+        </nav>        
+    </header>
+
+    <!-- ===== CONTACT CARDS ===== -->
+    <div class="contact-cards">
+        <div class="card">
+            <i class="fas fa-phone"></i>
+            <h3>Phone</h3>
+            <p>+63970 927 7466</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p class="email">
+                <a href="mailto:earlangana06@gmail.com">earlangana06@gmail.com</a>
+            </p>
+        </div>
+        <div class="card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Address</h3>
+            <p>P-4 Poblacion, Lianga, Surigao Del Sur</p>
+        </div>
+    </div>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <div class="contact-section">
+        <form class="contact-form" id="contact-form">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Your Email" required> 
+
+            <label>Message</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <p id="confirmation"></p>
+
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p class="highlight">Reach Out Anytime!</p>
+            <p>You can contact me via email, social media, or any of the platforms below. I’m available 24/7 for your queries.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/earl.angana.2024"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/thinkaboutearlyy/"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/imdanielpadilla?lang=en"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@earlyjeagarrrrr"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
